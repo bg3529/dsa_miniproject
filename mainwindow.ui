@@ -1,0 +1,1642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>717</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_11">
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>FreeMono</family>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(160, 182, 255);
+
+QPushButton{
+background-color:rgb(160, 255, 215)
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="mainlogo">
+         <property name="styleSheet">
+          <string notr="true">font: 700 italic 14pt &quot;Segoe UI&quot;;
+background-color: rgb(179, 255, 175);
+background-color: rgb(200, 199, 197);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Library</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="goto_addbookpage">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200, 199, 197);
+color: rgb(0, 0, 0);
+font: 600 10pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Add Books</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="goto_viewpage">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200, 199, 197);
+color: rgb(0, 0, 0);
+font: 600 10pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>View-Books</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="assignreturnpage">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200, 199, 197);
+color: rgb(0, 0, 0);
+font: 600 10pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Assign/Return Book</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="deletepagenavigate">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200, 199, 197);
+color: rgb(0, 0, 0);
+font: 600 10pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Delete Book</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="aExit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200, 199, 197);
+color: rgb(0, 0, 0);
+font: 600 10pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Exit</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 251);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_16">
+        <item>
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QFrame" name="cardframe">
+          <property name="styleSheet">
+           <string notr="true">QFrame#frame_22 {
+    background-color: #c6fffb;
+    border: 1px solid #008b8b;
+    border-radius: 5px;
+}
+
+QLabel#label_25 {
+    color: #000000;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+QFrame#cardframe {
+    background-color: transparent;
+    border: none;
+}
+
+QFrame#frame_8, QFrame#frame_16, QFrame#frame_20 {
+    background-color: #e0ffff;
+    border: 1px solid #008b8b;
+    border-radius: 4px;
+}
+
+QLabel#label_2, QLabel#label_16, QLabel#label_21 {
+    background-color: #80b9ff;
+    color: #000000;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-bottom: 1px solid #008b8b;
+}
+
+QLabel#label_22, QLabel#label_23, QLabel#label_24 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333333;
+    background: transparent;
+    qproperty-alignment: 'AlignCenter';
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QFrame" name="frame_8">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+background-color: rgb(0, 0, 0);
+background-color: rgb(128, 185, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Total Books</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_16">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <widget class="QLabel" name="label_16">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Total Borrowed</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_20">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_19">
+              <item>
+               <widget class="QLabel" name="label_21">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Total Available</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_18">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ViewBookS">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>FreeMono</family>
+            <pointsize>30</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>View Books Lists</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+    border: 2px solid;
+    border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                  stop:0 #7289da, stop:1 #424549);
+    border-radius: 5px;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QFrame" name="frame_21">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QLineEdit" name="SearchlineEdit">
+                <property name="placeholderText">
+                 <string>Search</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="SearchPushButton">
+                <property name="text">
+                 <string>Search</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="bookTable">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>590</width>
+               <height>0</height>
+              </size>
+             </property>
+             <column>
+              <property name="text">
+               <string>Title</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Author</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>BookID</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Available</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Date Borrowed</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Deadline</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>FIne</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Updatebooks">
+       <layout class="QVBoxLayout" name="verticalLayout_5"/>
+      </widget>
+      <widget class="QWidget" name="ReturnBooks">
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <widget class="QFrame" name="frame_11">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QFrame" name="assignbookpart">
+             <property name="styleSheet">
+              <string notr="true">.QFrame {
+    border: 2px solid;
+    border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                  stop:0 #7289da, stop:1 #424549);
+    border-radius: 5px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_17">
+                <property name="styleSheet">
+                 <string notr="true">font: 700 14pt &quot;Segoe UI&quot;;
+background-color: rgb(226, 250, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Assign a Book</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_12">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>FreeMono</family>
+                  <pointsize>15</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QFormLayout" name="formLayout_4">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_30">
+                   <property name="text">
+                    <string>Book ID :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="RA_bookid">
+                   <property name="placeholderText">
+                    <string>1001</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_9">
+                   <property name="text">
+                    <string>ID-CARD :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="RA_studentid">
+                   <property name="placeholderText">
+                    <string>CE-2024-58</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>Borrowed Date</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_20">
+                   <property name="text">
+                    <string>Due Date</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QDateTimeEdit" name="dateTimeEdit_2"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_13">
+                <property name="font">
+                 <font>
+                  <family>FreeMono</family>
+                  <pointsize>20</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QPushButton" name="assignbookbutton">
+                   <property name="text">
+                    <string>Assign</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_14">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_12">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="returnbookpart">
+             <property name="styleSheet">
+              <string notr="true">.QFrame {
+    border: 2px solid;
+    border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                  stop:0 #7289da, stop:1 #424549);
+    border-radius: 5px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_18">
+                <property name="styleSheet">
+                 <string notr="true">font: 700 14pt &quot;Segoe UI&quot;;
+background-color: rgb(226, 250, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Return a Book</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_14">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>FreeMono</family>
+                  <pointsize>15</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QFormLayout" name="formLayout_6">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_31">
+                   <property name="text">
+                    <string>Book ID :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="RA_bookid_2">
+                   <property name="placeholderText">
+                    <string>1001</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_15">
+                <property name="font">
+                 <font>
+                  <family>FreeMono</family>
+                  <pointsize>20</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <widget class="QPushButton" name="returnbookb">
+                   <property name="text">
+                    <string>Return</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_10">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);
+font: 600 12pt &quot;Segoe UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Search By Book Id</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="searchbutton">
+             <property name="text">
+              <string>Search</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="showbookidtable"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page">
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+         <widget class="QLabel" name="label_6">
+          <property name="font">
+           <font>
+            <family>FreeMono</family>
+            <pointsize>40</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(76, 255, 189);</string>
+          </property>
+          <property name="text">
+           <string>Add Books</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_17">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QFrame" name="frame_4">
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+    border: 2px solid;
+    border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                  stop:0 #7289da, stop:1 #424549);
+    border-radius: 5px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QFrame" name="frame_18">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>FreeMono</family>
+                  <pointsize>15</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QFormLayout" name="formLayout_5">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_35">
+                   <property name="text">
+                    <string>Title :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="titleInput">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Atomic Habits</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_36">
+                   <property name="text">
+                    <string>Author:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="authorInput">
+                   <property name="placeholderText">
+                    <string>James Clear</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>Location Code:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="locationcode">
+                   <property name="placeholderText">
+                    <string>F1-S11-R5- MATH90-001</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_13">
+                   <property name="text">
+                    <string>Quantity :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="quantityInput">
+                   <property name="whatsThis">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In each single row quantity cant be greater than 50&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>10</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_19">
+                <property name="font">
+                 <font>
+                  <family>FreeMono</family>
+                  <pointsize>20</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                  <widget class="QPushButton" name="pushButton_6">
+                   <property name="styleSheet">
+                    <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Cancel</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                  <widget class="QPushButton" name="addBook">
+                   <property name="styleSheet">
+                    <string notr="true">QFrame {
+   
+    border:black;
+    border-radius: 5px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Add Books</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_7">
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+    border: 2px solid;
+    border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                  stop:0 #7289da, stop:1 #424549);
+    border-radius: 5px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font>
+                  <family>FreeMono</family>
+                  <pointsize>20</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Generate Code</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextBrowser" name="textBrowser">
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Remember :&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The location Code should be in given format&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;For example: &lt;span style=&quot; font-weight:700;&quot;&gt;F1-S11-R5- MATH90-001&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The bookcode is the code for all copies of a book .&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_8" native="true">
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+   
+    border:none;
+    border-radius: 5px;
+}</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_40">
+                   <property name="text">
+                    <string>Floor: </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_4">
+                   <item>
+                    <property name="text">
+                     <string>Ground FLoor</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>First FLoor</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Second Floor</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Third Floor</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Fourth Floor</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Fifth Floor</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_41">
+                   <property name="text">
+                    <string>Shelf No:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_5">
+                   <item>
+                    <property name="text">
+                     <string>S1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S3</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S4</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S5</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S6</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S7</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S8</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S9</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S10</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S11</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>S12</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>Row No:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox">
+                   <item>
+                    <property name="text">
+                     <string>R1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>R2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>R3</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>R4</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>R5</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>R6</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>R7</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>R8</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>Book Code</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="bookcode">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="placeholderText">
+                    <string>BookCode Eg:Math22</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="generatecode">
+                   <property name="text">
+                    <string>Generate Code</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="deletebookpage">
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 125, 153);
+font: 600 24pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Danger Zone</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_9">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QFrame" name="frame_24">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+    border: 2px solid;
+    border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                  stop:0 #7289da, stop:1 #424549);
+    border-radius: 5px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QLabel" name="label_15">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>20</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 600 8pt &quot;Segoe UI&quot;;
+font: 20pt &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Delete a Single Book</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="del_bookid_2">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="placeholderText">
+                 <string>Book ID</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="deleteabook">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 143, 186);
+background-color: rgb(255, 28, 43);
+color: rgb(0, 0, 0);
+font: 600 16pt &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Delete</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_17">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_15">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_16">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="deletewholecopiespart">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+    border: 2px solid;
+    border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                  stop:0 #7289da, stop:1 #424549);
+    border-radius: 5px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QLabel" name="label_14">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);
+font: 14pt &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Delete whole copies of a book</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_7">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 74, 83);
+font: 12pt &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Enter Book Code Only</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="del_bookcode">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="placeholderText">
+                 <string>Book Code</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="deleteallsamebooks">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 143, 186);
+background-color: rgb(255, 15, 19);
+color: rgb(0, 0, 0);
+font: 600 16pt &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="text">
+                 <string> Delete all Books</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
